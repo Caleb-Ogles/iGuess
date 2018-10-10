@@ -42,7 +42,7 @@
                                         <rect key="frame" x="137" y="198.5" width="48" height="30"/>
                                         <state key="normal" title="Guess!"/>
                                         <connections>
-                                            <action selector="GuessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAg-MQ-bi4"/>
+                                            <action selector="GuessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pmW-N7-xhd"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Too High/Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj3-W4-k4m">
@@ -51,8 +51,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*number* guesses remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFr-cc-fdT">
-                                        <rect key="frame" x="50.5" y="321" width="221.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 guesses remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFr-cc-fdT">
+                                        <rect key="frame" x="82" y="321" width="158" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -71,12 +71,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="FeedbackLabel" destination="fj3-W4-k4m" id="aP0-56-RSv"/>
-                        <outlet property="GreetingLabel" destination="nT7-y0-EH6" id="nHu-lo-7ve"/>
-                        <outlet property="GuessButton" destination="VLc-5F-BKf" id="enP-dw-WbJ"/>
-                        <outlet property="InstructionsLabel" destination="xje-FR-oPA" id="5kv-9U-eC0"/>
-                        <outlet property="NumberOfGuessLabel" destination="TFr-cc-fdT" id="K19-cf-RrY"/>
-                        <outlet property="UserInputTextField" destination="GeG-V5-PLC" id="utQ-Ik-N9c"/>
+                        <outlet property="InstructionsLabel" destination="xje-FR-oPA" id="Pb6-i4-dVD"/>
+                        <outlet property="feedbackLabel" destination="fj3-W4-k4m" id="JJa-a2-8c0"/>
+                        <outlet property="guessButtonOutlet" destination="VLc-5F-BKf" id="LLw-Cd-MJ6"/>
+                        <outlet property="numberOfGuessesLabel" destination="TFr-cc-fdT" id="Tba-TK-68e"/>
+                        <outlet property="userGuesstextField" destination="GeG-V5-PLC" id="MVv-Rc-m8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
