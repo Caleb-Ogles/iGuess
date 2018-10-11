@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="enq-wc-pNi">
-                                <rect key="frame" x="26.5" y="40" width="322" height="341.5"/>
+                                <rect key="frame" x="26.5" y="40" width="322" height="345.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Guessing Game!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nT7-y0-EH6">
                                         <rect key="frame" x="5.5" y="0.0" width="311.5" height="24"/>
@@ -39,20 +39,28 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLc-5F-BKf">
-                                        <rect key="frame" x="137" y="198.5" width="48" height="30"/>
+                                        <rect key="frame" x="133" y="198.5" width="56" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Guess!"/>
                                         <connections>
                                             <action selector="GuessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pmW-N7-xhd"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEk-8s-Vax">
+                                        <rect key="frame" x="125.5" y="250.5" width="71" height="0.0"/>
+                                        <state key="normal" title="Play Again"/>
+                                        <connections>
+                                            <action selector="PlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0m-9H-9Cv"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Too High/Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj3-W4-k4m">
-                                        <rect key="frame" x="109" y="264.5" width="104.5" height="20.5"/>
+                                        <rect key="frame" x="109" y="268.5" width="104.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 guesses remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFr-cc-fdT">
-                                        <rect key="frame" x="82" y="321" width="158" height="20.5"/>
+                                        <rect key="frame" x="82" y="325" width="158" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -72,6 +80,7 @@
                     </view>
                     <connections>
                         <outlet property="InstructionsLabel" destination="xje-FR-oPA" id="Pb6-i4-dVD"/>
+                        <outlet property="PlayAgain" destination="eEk-8s-Vax" id="1s3-J5-ysN"/>
                         <outlet property="feedbackLabel" destination="fj3-W4-k4m" id="JJa-a2-8c0"/>
                         <outlet property="guessButtonOutlet" destination="VLc-5F-BKf" id="LLw-Cd-MJ6"/>
                         <outlet property="numberOfGuessesLabel" destination="TFr-cc-fdT" id="Tba-TK-68e"/>
