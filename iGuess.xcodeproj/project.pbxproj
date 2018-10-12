@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF317ADC216F9AAB00EF7622 /* selectDifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF317ADB216F9AAB00EF7622 /* selectDifficultyViewController.swift */; };
 		BF420D3F216CFCF000FA57DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF420D3E216CFCF000FA57DC /* AppDelegate.swift */; };
 		BF420D41216CFCF000FA57DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF420D40216CFCF000FA57DC /* ViewController.swift */; };
 		BF420D44216CFCF000FA57DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF420D42216CFCF000FA57DC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF317ADB216F9AAB00EF7622 /* selectDifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectDifficultyViewController.swift; sourceTree = "<group>"; };
 		BF420D3B216CFCF000FA57DC /* iGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF420D3E216CFCF000FA57DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF420D40216CFCF000FA57DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				BF420D3E216CFCF000FA57DC /* AppDelegate.swift */,
+				BF317ADB216F9AAB00EF7622 /* selectDifficultyViewController.swift */,
 				BF420D40216CFCF000FA57DC /* ViewController.swift */,
 				BF420D42216CFCF000FA57DC /* Main.storyboard */,
 				BF420D45216CFCF000FA57DC /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF317ADC216F9AAB00EF7622 /* selectDifficultyViewController.swift in Sources */,
 				BF420D41216CFCF000FA57DC /* ViewController.swift in Sources */,
 				BF420D3F216CFCF000FA57DC /* AppDelegate.swift in Sources */,
 			);

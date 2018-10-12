@@ -36,6 +36,10 @@ class ViewController: UIViewController {
     }
     
     // MARK: Properties
+    var minimum = 1
+    var maximum = 100
+    var numberOfGuesses = 5
+    
     var randomNumber = Int.random(in: 1...100)
     var guessesRemaining = 5
     
@@ -45,16 +49,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        restart()
     }
     
     // MARK: Functions
     
-    func restart(){
+    func restart() {
         // new random number
-        randomNumber = Int.random(in: 1...100)
+        randomNumber = Int.random(in: minimum...maximum)
         // reset guesses remaining
-        guessesRemaining = 5
+        guessesRemaining = numberOfGuesses
         // clear text field
         userGuesstextField.text = ""
         // enable text field
@@ -64,9 +68,11 @@ class ViewController: UIViewController {
         // show guess button
         guessButtonOutlet.isHidden = false
         // reset feedback label
-        feedbackLabel.text = "Too High/Low"
+        feedbackLabel.text = "Guess a number! 🤯"
         // reset guesses remaining label
-        numberOfGuessesLabel.text = "You have \(guessesRemaining) guesses left"
+        numberOfGuessesLabel.text = "You have \(guessesRemaining) guesses left 🤭"
+        // Set instruction label
+        InstructionsLabel.text = "Please enter a number between 1 and \(maximum)"
     }
     
     
@@ -86,8 +92,8 @@ class ViewController: UIViewController {
 
     
     func makeAGuess(_ guess: Int) {
-        guard guess >= 1 && guess <= 100 else {
-            feedbackLabel.text = "Your number wasn't between 0 and 100!! 🤬"
+        guard guess >= minimum && guess <= maximum else {
+            feedbackLabel.text = "Your number wasn't between \(minimum) and \(maximum)!! 🤬"
             return
         }
         
@@ -110,7 +116,7 @@ class ViewController: UIViewController {
         }
         
         guessesRemaining -= 1
-        numberOfGuessesLabel.text = "You have \(guessesRemaining) guesses left 🤠"
+        numberOfGuessesLabel.text = "You have \(guessesRemaining) guesses left 🤭"
     }
     
 }
