@@ -21,6 +21,7 @@ class SelectDifficultyViewController: UIViewController {
             //# guesses 5
             
             guessingGameViewController.maximum = 50
+            guessingGameViewController.numberOfGuesses = 15
             
         case "MediumToGuessingGame":
             //min 1
@@ -28,6 +29,7 @@ class SelectDifficultyViewController: UIViewController {
             //# of guesses 5
             
             guessingGameViewController.maximum = 100
+            guessingGameViewController.numberOfGuesses = 10
             
         case "HardToGuessingGame":
             //min 1
@@ -35,6 +37,11 @@ class SelectDifficultyViewController: UIViewController {
             //# of guesses 5
             
             guessingGameViewController.maximum = 500
+            guessingGameViewController.numberOfGuesses = 5
+            
+        case "CustomToGuessingGame":
+            break
+
             
         default:
             break

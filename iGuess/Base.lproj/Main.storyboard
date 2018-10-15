@@ -9,6 +9,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Custom Button View Controller-->
+        <scene sceneID="mBb-Re-hKg">
+            <objects>
+                <viewController id="Hu7-k5-fXO" customClass="CustomButtonViewController" customModule="iGuess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgk-mM-tf6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vn-qT-Y49">
+                                <rect key="frame" x="26" y="20" width="323" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Please enter the range of numbers to use in generating your random number 😛
+</string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.98780504339999997" blue="0.99090563519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lower Bound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUP-Wy-ke3">
+                                <rect key="frame" x="7" y="175" width="158" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.98780504339999997" blue="0.99090563519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upper Bound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szv-8G-HIG">
+                                <rect key="frame" x="212" y="175" width="153" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.98780504339999997" blue="0.99090563519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nc4-Yy-DFi">
+                                <rect key="frame" x="38" y="210" width="97" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkc-zV-SSP">
+                                <rect key="frame" x="240" y="210" width="97" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0e-aD-Sbn">
+                                <rect key="frame" x="162" y="539" width="59" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <state key="normal" title="Play!">
+                                    <color key="titleColor" red="0.63487433130000004" green="0.15143196519999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="DjX-qp-wQH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-Jw-hVv">
+                                <rect key="frame" x="139" y="354" width="97" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="# of Guesses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUf-c7-W8g">
+                                <rect key="frame" x="105" y="319" width="165" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.98780504339999997" blue="0.99090563519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="Xrk-M4-TPe"/>
+                    </view>
+                    <connections>
+                        <outlet property="customGuesses" destination="aKk-Jw-hVv" id="uXj-Ho-M8S"/>
+                        <outlet property="lowerBound" destination="nc4-Yy-DFi" id="fCJ-dX-dwb"/>
+                        <outlet property="upperBound" destination="bkc-zV-SSP" id="2wl-kT-Kdn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rq8-IJ-dxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="-711.09445277361328"/>
+        </scene>
         <!--Select Difficulty View Controller-->
         <scene sceneID="180-UH-0tZ">
             <objects>
@@ -29,7 +113,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5s-9t-VLK">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
                                         <color key="backgroundColor" red="1" green="0.91959184738405342" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                         <state key="normal" title="Easy">
                                             <color key="titleColor" red="1" green="0.99155804969835093" blue="0.93992375193654887" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -40,7 +124,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdr-6r-BsW">
                                         <rect key="frame" x="0.0" y="146" width="375" height="145.5"/>
                                         <color key="backgroundColor" red="0.13483412375111359" green="1" blue="0.95757260087726936" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                         <state key="normal" title="Medium">
                                             <color key="titleColor" red="1" green="0.994207518668621" blue="0.98451339178025066" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -51,7 +135,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ss-Hi-2Yb">
                                         <rect key="frame" x="0.0" y="291.5" width="375" height="146"/>
                                         <color key="backgroundColor" red="1" green="0.40031781455839011" blue="0.25295063222461434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                         <state key="normal" title="Hard">
                                             <color key="titleColor" red="0.98474812864918237" green="1" blue="0.94846525995225173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -62,10 +146,13 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sF-pg-r5c">
                                         <rect key="frame" x="0.0" y="437.5" width="375" height="145.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                         <state key="normal" title="Custom">
                                             <color key="titleColor" red="1" green="0.99772759578904435" blue="0.96144892054772479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Hu7-k5-fXO" kind="show" identifier="CustomToGuessingGame" id="ypg-I6-Tsd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -95,50 +182,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="enq-wc-pNi">
-                                <rect key="frame" x="26.5" y="40" width="322" height="345.5"/>
+                                <rect key="frame" x="18.5" y="40" width="338.5" height="412.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Guessing Game!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nT7-y0-EH6">
-                                        <rect key="frame" x="5.5" y="0.0" width="311.5" height="24"/>
+                                        <rect key="frame" x="13.5" y="0.0" width="311.5" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a number between 0 and 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xje-FR-oPA">
-                                        <rect key="frame" x="0.0" y="60" width="322" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="60" width="338.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="GeG-V5-PLC">
-                                        <rect key="frame" x="139.5" y="116.5" width="43" height="46"/>
+                                        <rect key="frame" x="147.5" y="114" width="43" height="46"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLc-5F-BKf">
-                                        <rect key="frame" x="133" y="198.5" width="56" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <rect key="frame" x="137" y="196" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <state key="normal" title="Guess!"/>
                                         <connections>
                                             <action selector="GuessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pmW-N7-xhd"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEk-8s-Vax">
-                                        <rect key="frame" x="125.5" y="250.5" width="71" height="0.0"/>
-                                        <state key="normal" title="Play Again"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEk-8s-Vax">
+                                        <rect key="frame" x="116.5" y="266" width="105" height="34"/>
+                                        <color key="backgroundColor" red="0.18845671027007005" green="1" blue="0.10786574305594099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                        <state key="normal" title="Play Again">
+                                            <color key="titleColor" red="1" green="0.98780504335133923" blue="0.99090563520557196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <action selector="PlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0m-9H-9Cv"/>
+                                            <segue destination="6CE-gp-f1O" kind="show" id="CHg-Hq-bHR"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Too High/Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj3-W4-k4m">
-                                        <rect key="frame" x="109" y="268.5" width="104.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="110" y="336" width="118" height="19"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 guesses remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFr-cc-fdT">
-                                        <rect key="frame" x="82" y="325" width="158" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="71" y="391" width="196.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -170,6 +262,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BjE-Fe-job"/>
+        <segue reference="DjX-qp-wQH"/>
     </inferredMetricsTieBreakers>
 </document>

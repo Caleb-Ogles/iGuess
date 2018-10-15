@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         // reset guesses remaining label
         numberOfGuessesLabel.text = "You have \(guessesRemaining) guesses left 🤭"
         // Set instruction label
-        InstructionsLabel.text = "Please enter a number between 1 and \(maximum)"
+        InstructionsLabel.text = "Please enter a number between \(minimum) and \(maximum)"
     }
     
     
