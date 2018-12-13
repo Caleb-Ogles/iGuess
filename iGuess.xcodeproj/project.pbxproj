@@ -14,6 +14,7 @@
 		BF420D46216CFCF000FA57DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF420D45216CFCF000FA57DC /* Assets.xcassets */; };
 		BF420D49216CFCF000FA57DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF420D47216CFCF000FA57DC /* LaunchScreen.storyboard */; };
 		BFFCB2612174D354000AD84D /* CustomButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFCB2602174D354000AD84D /* CustomButtonViewController.swift */; };
+		BFFCB263217777B2000AD84D /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFCB262217777B2000AD84D /* StatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BF420D48216CFCF000FA57DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF420D4A216CFCF000FA57DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFFCB2602174D354000AD84D /* CustomButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonViewController.swift; sourceTree = "<group>"; };
+		BFFCB262217777B2000AD84D /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				BF420D3E216CFCF000FA57DC /* AppDelegate.swift */,
 				BF317ADB216F9AAB00EF7622 /* selectDifficultyViewController.swift */,
 				BFFCB2602174D354000AD84D /* CustomButtonViewController.swift */,
+				BFFCB262217777B2000AD84D /* StatsViewController.swift */,
 				BF420D40216CFCF000FA57DC /* ViewController.swift */,
 				BF420D42216CFCF000FA57DC /* Main.storyboard */,
 				BF420D45216CFCF000FA57DC /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				BF317ADC216F9AAB00EF7622 /* selectDifficultyViewController.swift in Sources */,
 				BF420D41216CFCF000FA57DC /* ViewController.swift in Sources */,
 				BFFCB2612174D354000AD84D /* CustomButtonViewController.swift in Sources */,
+				BFFCB263217777B2000AD84D /* StatsViewController.swift in Sources */,
 				BF420D3F216CFCF000FA57DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

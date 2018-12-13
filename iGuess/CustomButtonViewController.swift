@@ -15,6 +15,10 @@ class CustomButtonViewController: UIViewController {
     @IBOutlet weak var upperBound: UITextField!
     @IBOutlet weak var customGuesses: UITextField!
     
+    override func viewDidLoad() {
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let guessingGameViewController = segue.destination as? ViewController else {

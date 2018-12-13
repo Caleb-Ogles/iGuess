@@ -50,6 +50,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         restart()
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     
     // MARK: Functions
@@ -97,15 +98,13 @@ class ViewController: UIViewController {
             return
         }
         
-        guard guessesRemaining > 0 else {
-            feedbackLabel.text = "You lose!! 🤕"
-            setUpUIForRestart()
+        guard guessesRemaining > 1 else {
+            lose()
             return
         }
         
         if guess == randomNumber {
-            feedbackLabel.text = "You Win!!! 🤑"
-            setUpUIForRestart()
+            win()
             return
             
         } else if guess < randomNumber {
@@ -117,6 +116,28 @@ class ViewController: UIViewController {
         
         guessesRemaining -= 1
         numberOfGuessesLabel.text = "You have \(guessesRemaining) guesses left 🤭"
+    }
+    
+    func win() {
+        
+        let defaults = UserDefaults.standard
+        let wins = defaults.integer(forKey: "Wins")
+        defaults.set(wins + 1, forKey: "Wins")
+        
+        feedbackLabel.text = "You Win!!! 🤑"
+        setUpUIForRestart()
+        return
+    }
+    
+    func lose() {
+        
+        let defaults = UserDefaults.standard
+        let losses = defaults.integer(forKey: "Losses")
+        defaults.set(losses + 1, forKey: "Losses")
+        
+        feedbackLabel.text = "You lose!! 🤕"
+        setUpUIForRestart()
+        return
     }
     
 }
